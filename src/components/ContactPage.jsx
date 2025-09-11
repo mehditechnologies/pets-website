@@ -32,7 +32,7 @@ export default function Cart(){
                     </div>
                     <div className="flex flex-col gap-2">
                         <h2 className="font-[Poppins] font-semibold text-[32px] ">Based in</h2>
-                        <p className="font-[Poppins] font-light text-[32px] ">Cairo, Egypt</p>
+                        <p className="font-[Poppins] font-light text-[32px] ">Cairo,  Egypt</p>
                     </div>
                 </div>
                 <div className="flex gap-16 mt-11">
