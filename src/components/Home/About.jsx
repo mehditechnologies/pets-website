@@ -1,4 +1,6 @@
-export default function AboutUs() {
+import { Link } from "react-router-dom";
+
+export default function About() {
   return (
     <section className="bg-[#FFD56E54] relative flex flex-col items-center py-16 z-0">
       {/* Heading */}
@@ -29,17 +31,19 @@ export default function AboutUs() {
       </p>
 
       {/* Show More button */}
-      <button
+      <Link
+        to="/about"
         className="
-          bg-[#FFD56E] text-white
+          bg-[#FFD56E] hover:bg-amber-300 text-white
           w-[156px] h-[60px]
           rounded-[10px]
           shadow-[0_13px_26px_-8px_#FF5B2E6B]
           mt-8
+          flex items-center justify-center
         "
       >
         Show More
-      </button>
+      </Link>
 
       {/* Decorative ring */}
       <img
@@ -49,7 +53,6 @@ export default function AboutUs() {
           absolute
           left-[66px] top-[388px]
           w-[118.88px] h-[115.58px]
-        
         "
       />
 

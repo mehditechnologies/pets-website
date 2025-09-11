@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Services({ AboutButton = null, trianglesSrc = "" }) {
   const services = [
     {
@@ -74,9 +75,11 @@ export default function Services({ AboutButton = null, trianglesSrc = "" }) {
 
         {/* CTA + Triangles */}
         <div className="mt-10 flex flex-col items-center gap-6">
-          <button className="bg-[#FFD56E] text-white w-[156px] h-[60px] rounded-[10px] shadow-[0_13px_26px_-8px_#FF5B2E6B] mt-8">
+          <Link
+            to="/services"
+            className="bg-[#FFD56E] hover:bg-amber-300 text-white w-[156px] h-[60px] rounded-[10px] shadow-[0_13px_26px_-8px_#FF5B2E6B] mt-8 flex items-center justify-center">
             Learn More
-          </button>
+          </Link>
           <div className="relative h-5 left-44 bottom-16">
             <img src="/Tri.png" alt="Navigation indicators" className="h-5 w-auto" />
           </div>

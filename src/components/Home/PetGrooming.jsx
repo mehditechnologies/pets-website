@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function PetGrooming() {
   return (
     <section className="relative w-full min-h-screen bg-[url('/wave-bg.png')] bg-size-[auto_900px] bg-center bg-no-repeat my-44 py-56">
@@ -24,9 +25,12 @@ export default function PetGrooming() {
             <li>De-matting and detangling</li>
           </ul>
 
-          <button className="mt-8 bg-[#FFD56E] hover:bg-[#FFB800] text-white font-semibold px-6 py-3 rounded-lg shadow-md">
-            Our Services
-          </button>
+            <Link
+              to="/grooming"
+              className="mt-8 bg-[#FFD56E] hover:bg-[#FFB800] text-white inline-block font-semibold px-6 py-3 rounded-lg shadow-md"
+            >
+              Our Services
+            </Link>
         </div>
       </div>
 

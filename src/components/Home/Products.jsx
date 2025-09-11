@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const products = [
   {
     name: "Drools | 3KG",
@@ -36,9 +37,10 @@ export default function PetFoodPromo() {
         </div>
 
         {/* View More Button */}
-        <button className="bg-[#FFD56E] hover:bg-[#FFB800] text-white font-medium px-5 py-2 rounded-md flex items-center gap-2">
+        <Link
+          to="/products" className="bg-[#FFD56E] hover:bg-[#FFB800] text-white font-medium px-5 py-2 rounded-md flex items-center gap-2">
           View more <span className="text-lg">→</span>
-        </button>
+        </Link>
       </div>
 
       {/* Products */}
@@ -60,9 +62,9 @@ export default function PetFoodPromo() {
                 <h3 className="font-[Poppins] text-[18px] font-semibold text-[#222]">{product.name}</h3>
                 <p className="font-[Poppins] text-[14px] text-[#555] mt-2">{product.description}</p>
               {/* Button */}
-              <button className="border border-[#FFD56E] w-32 text-[#FFB800] text-[14px] font-medium px-6 py-2 rounded hover:bg-[#FFD56E] transition">
-              Buy Now
-              </button>
+              <Link to="/cart" className="inline-block border border-[#FFD56E] w-32 text-[#FFB800] text-[14px] font-medium  text-center py-2 rounded hover:bg-[#FFD56E] transition">
+                Buy Now
+              </Link>
               </div>
 
               

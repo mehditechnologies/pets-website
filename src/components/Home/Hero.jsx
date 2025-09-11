@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="inherit w-full h-screen bg-white mb-36 top-[-139px]">
@@ -45,9 +47,9 @@ export default function Hero() {
           Pets is chain of modern clinics to cater to all your pet needs such
           as wellness, consultations, grooming and nutrition.
         </p>
-        <button className="mt-[32px] px-[32px] py-[16px] bg-[#ffd56e] text-white rounded-[8px] text-[18px] shadow-xl">
+        <Link to="/services" className="mt-[32px] inline-block px-[32px] py-[16px] bg-[#ffd56e] hover:bg-amber-300 text-white rounded-[8px] text-[18px] shadow-xl">
           Explore more
-        </button>
+        </Link>
       </div>
 
       {/* HOW TO TAKE CARE BAR */}
