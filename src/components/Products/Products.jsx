@@ -1,5 +1,5 @@
-import Head from '../Head.jsx'
 import Foot from '../Foot.jsx'
+import { Link } from 'react-router-dom';
 const products = [
   {
     name: "Drools | 3KG",
@@ -77,7 +77,7 @@ const products = [
 export default function Products(){
     return(
         <>
-        <Head/>
+        
         <section className="relative flex flex-wrap justify-center text-center gap-9 my-44">
             
             <img src="/Paw2.png" className="absolute left-[550px] top-[5px] w-[80px] h-[80px] "/>
@@ -96,7 +96,7 @@ export default function Products(){
                         <p className="font-[Rubik] font-normal text-[22px] text-[#979697] text-start mt-2">{product.description}</p>
                         <p className="font-[Rubik] font-normal text-[22px] text-start">300 EGP &nbsp;&nbsp;<span className="text-[#FF4F4F] line-through">400 EGP</span></p>
                     {/* Button */}
-                        <button className="border-[3px] border-[#FFD56E] w-[187px] text-[#FFB800] text-[22px] font-medium px-6 py-2 rounded hover:bg-[#FFD56E] transition"> Add to cart </button>
+                        <Link to="/cart" className="border-[3px] border-[#FFD56E] inline-block w-[187px] text-[#FFB800] text-[22px] font-medium px-6 py-2 rounded hover:bg-[#FFD56E] transition"> Add to cart </Link>
                     </div>
 
                     

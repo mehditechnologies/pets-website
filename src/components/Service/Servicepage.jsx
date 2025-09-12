@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Head from '../Head.jsx'
 import Foot from '../Foot.jsx'
 const serve=[
     {
@@ -43,7 +42,7 @@ const serve=[
 export default function Services(){
     return(
         <>
-        <Head/>
+        
         <section className="relative flex flex-col justify-center text-center gap-9 mt-44">
             
             <img src="/Paw2.png" className="absolute left-[500px] top-[5px] w-[80px] h-[80px] "/>

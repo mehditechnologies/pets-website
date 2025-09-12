@@ -1,9 +1,9 @@
-import Head from "../Head"
+
 import Foot from "../Foot"
 export default function(){
     return(
         <>
-        <Head/>
+        
         <section>
         <div className="relative flex flex-col justify-center text-start gap-10 mx-14 my-28">
             

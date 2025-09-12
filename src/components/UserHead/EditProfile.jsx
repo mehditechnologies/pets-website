@@ -1,7 +1,8 @@
 import React from 'react';
-
+import Foot from '../Foot.jsx'
 const UserProfile = () => {
   return (
+    <>
     <div className="relative flex flex-col justify-center text-center my-28">
       <div className="flex flex-col justify-center items-center mb-16 relative">
        <img src="/Paw2.png" className="absolute left-[480px] top-[-5px] w-[80px] h-[80px] "/>
@@ -36,6 +37,8 @@ const UserProfile = () => {
         </button>
       </div>
     </div>
+    <Foot/>
+    </>
   );
 };
 

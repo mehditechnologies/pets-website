@@ -1,15 +1,34 @@
 import React from 'react';
+import Foot from '../Foot.jsx'
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
   return (
+    <>
     <div className="relative flex flex-col justify-center text-center my-28">
       <div className="flex flex-col justify-center items-center mb-16 relative">
        <img src="/Paw2.png" className="absolute left-[480px] top-[-5px] w-[80px] h-[80px] "/>
         <h1 className="font-[Peralta]  font-normal text-[48px]">My Profile</h1>
         <img src="/gallery2.png" alt="Profile" className="w-[300px] h-[300px] rounded-full object-cover my-20"/>
-        <button className="bg-black text-white font-[Poppins] font-semibold text-[28px] w-[211px] h-[62px] px-4 py-2 rounded hover:bg-gray-800 transition">
-          Edit
-        </button>
+        <div className="flex gap-6">
+          <Link
+            to="/profup"
+            className="bg-black inline-block text-white font-[Poppins] font-semibold text-[28px] w-[211px] h-[62px] px-4 py-2 rounded hover:bg-gray-800 transition"
+          >
+            Edit
+          </Link>
+
+          <button
+            onClick={() => {
+              localStorage.removeItem("isLoggedIn");
+              window.location.href = "/";
+            }}
+            className="bg-black inline-block text-white font-[Poppins] font-semibold text-[28px] w-[211px] h-[62px] px-4 py-2 rounded hover:bg-gray-800 transition"
+          >
+            Logout
+          </button>
+        </div>
+
       </div>
       
       <div className="space-y-4 text-left mx-24">
@@ -34,6 +53,8 @@ const UserProfile = () => {
         </div>
       </div>
     </div>
+    <Foot/>
+    </>
   );
 };
 

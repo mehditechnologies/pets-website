@@ -24,6 +24,9 @@ export default function Head() {
           <li className="cursor-pointer hover:text-black">
             <Link to="/products">Products</Link>
           </li>
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/contact">Contact us</Link>
+          </li>
         </ul>
       </div>
 

@@ -1,4 +1,3 @@
-import Head from '../Head.jsx'
 import Hero from './Hero.jsx'
 import About from './About.jsx'
 import Gallery from './Gallery.jsx'
@@ -12,7 +11,7 @@ function Home() {
 
   return (
     <>
-    <Head/>
+    
     <Hero/>
     <About/>
     <Services/>

@@ -1,5 +1,9 @@
+import Foot from './Foot'
 export default function Cart(){
     return(
+        <>
+        
+        
         <section className="relative flex flex-col  text-center gap-9 my-44">
             
             <img src="/Paw2.png" className="absolute left-[530px] top-[-5px] w-[80px] h-[80px] "/>
@@ -36,9 +40,9 @@ export default function Cart(){
                     </div>
                 </div>
                 <div className="flex gap-16 mt-11">
-                    <img src="/fbb.png"/>
-                    <img src="/instab.png"/>
-                    <img src="/xb.png"/>
+                    <a href="#"><img src="/fbb.png"/></a>
+                    <a href="#"><img src="/instab.png"/></a>
+                    <a href="#"><img src="/xb.png"/></a>
                 </div>
             </div>
           </div>
@@ -46,5 +50,8 @@ export default function Cart(){
            <img src="/map2.png" className="absolute right-[580px] top-[360px] z-30 opacity-85" />
             <div className="right-[20px] top-80 absolute w-[419px] h-[912px] bg-[#FFB800] z-10"></div>
          </section>
+        <Foot/>
+        </>
     )
+
 }

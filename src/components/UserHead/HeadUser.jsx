@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Head() {
   const [open, setOpen] = useState(false);
@@ -11,12 +12,23 @@ export default function Head() {
       </div>
 
       {/* Navbar Links */}
-      <div>
-        <ul className="flex gap-8 text-gray-400 font-semibold">
-          <li className="cursor-pointer hover:text-black">Home</li>
-          <li className="cursor-pointer hover:text-black">About Us</li>
-          <li className="cursor-pointer hover:text-black">Services</li>
-          <li className="cursor-pointer hover:text-black">Products</li>
+      <div className="w-full sm:w-auto">
+        <ul className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-6 md:gap-8 text-gray-400 font-semibold text-sm sm:text-base">
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/services">Services</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/products">Products</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black">
+            <Link to="/contact">Contact us</Link>
+          </li>
         </ul>
       </div>
 
@@ -63,12 +75,12 @@ export default function Head() {
           </div>
         </div>
 
-        <a href="#">
+        <Link to="/cart">
           <img src="/Cart.png" className="w-[40px] h-[40px]" />
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/profile">
           <img src="/Contact.png" className="w-[40px] h-[40px]" />
-        </a>
+        </Link>
       </div>
     </div>
   );
