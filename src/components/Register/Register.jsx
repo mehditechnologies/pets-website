@@ -23,9 +23,13 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="flex bg-[#FFD56E]">
-      <AuthSidebar />
-      {renderPanel()}
+   <div className="flex flex-col sm:flex-row min-h-screen">
+      <div className="w-full sm:flex-[1.2] bg-[#FFD56E]">
+        <AuthSidebar />
+      </div>
+      <div className="w-full sm:flex-[1.8] pb-32">
+        {renderPanel()}
+      </div>
     </div>
   );
 }

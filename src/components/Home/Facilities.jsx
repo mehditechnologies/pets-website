@@ -17,9 +17,7 @@ const FacilitiesSection = ({
     <section className="bg-white py-16 px-4 md:px-10 lg:px-20 mt-36 relative">
       {/* Heading */}
       <div className="max-w-[650px] mx-auto text-center mb-36">
-        <h2
-          className="font-[Peralta] text-[45px] md:text-4xl font-normal text-gray-900 mb-4"
-        >
+        <h2 className="font-[Peralta] text-[45px] md:text-4xl font-normal text-gray-900 mb-4">
           {title}
         </h2>
         <p className="font-[Poppins] text-[16px] font-normal text-[#656689]">
@@ -27,20 +25,21 @@ const FacilitiesSection = ({
         </p>
       </div>
 
-      <img src="/line.png" className="absolute top-[500px] left-[160px]"/>
-      <img src="/line.png" className="absolute top-[720px] left-[160px]"/>
-      <img src="/line.png" className="absolute top-[500px] right-[220px]"/>
-      <img src="/line.png" className="absolute top-[720px] right-[220px]"/>
+      {/* Decorative images — hidden on small screens */}
+      <img src="/line.png" className="absolute hidden md:block top-[500px] left-[160px]" />
+      <img src="/line.png" className="absolute hidden md:block top-[720px] left-[160px]" />
+      <img src="/line.png" className="absolute hidden md:block top-[500px] right-[220px]" />
+      <img src="/line.png" className="absolute hidden md:block top-[720px] right-[220px]" />
 
-      <img src="/1.png" className="absolute top-[485px] left-[490px]"/>
-      <img src="/2.png" className="absolute top-[490px] left-[496px] z-10"/>
-      <img src="/1.png" className="absolute top-[705px] left-[490px]"/>
-      <img src="/2.png" className="absolute top-[710px] left-[496px] z-10"/>
+      <img src="/1.png" className="absolute hidden md:block top-[485px] left-[490px]" />
+      <img src="/2.png" className="absolute hidden md:block top-[490px] left-[496px] z-10" />
+      <img src="/1.png" className="absolute hidden md:block top-[705px] left-[490px]" />
+      <img src="/2.png" className="absolute hidden md:block top-[710px] left-[496px] z-10" />
 
-      <img src="/1.png" className="absolute top-[485px] right-[550px]"/>
-      <img src="/2.png" className="absolute top-[490px] right-[556px] z-10"/>
-      <img src="/1.png" className="absolute top-[705px] right-[550px]"/>
-      <img src="/2.png" className="absolute top-[710px] right-[556px] z-10"/>
+      <img src="/1.png" className="absolute hidden md:block top-[485px] right-[550px]" />
+      <img src="/2.png" className="absolute hidden md:block top-[490px] right-[556px] z-10" />
+      <img src="/1.png" className="absolute hidden md:block top-[705px] right-[550px]" />
+      <img src="/2.png" className="absolute hidden md:block top-[710px] right-[556px] z-10" />
 
       {/* Desktop / tablet layout */}
       <div className="mx-auto max-w-[1280px] hidden md:flex items-start justify-between gap-10">
@@ -48,11 +47,8 @@ const FacilitiesSection = ({
         <div className="w-[360px] h-[656px] mr-[6px] flex flex-col gap-40 pt-1 pl-10">
           {leftItems.map((item, idx) => (
             <div key={idx} className="flex items-center">
-              {/* Text right-aligned */}
               <div className="max-w-[240px] text-left">
-                <h3
-                  className="text-[18px] font-[Peralta] font-normal text-gray-900 mb-1"
-                >
+                <h3 className="text-[18px] font-[Peralta] font-normal text-gray-900 mb-1">
                   {item.heading}
                 </h3>
                 <p className="font-[Poppins] text-sm text-[#656689] leading-relaxed">
@@ -63,7 +59,7 @@ const FacilitiesSection = ({
           ))}
         </div>
 
-        {/* Center framed image (417 × 656, radius 300.5px, border 5px, color #FFEFDE) */}
+        {/* Center framed image */}
         <div className="relative pt-11">
           <div className="w-[333px] h-[550px] mx-[-80px] rounded-[300.5px] outline-[#FFEFDE] outline-4 outline-offset-[50px] overflow-hidden bg-[#FFB800]">
             <img
@@ -73,17 +69,13 @@ const FacilitiesSection = ({
             />
           </div>
         </div>
-          
+
         {/* Right column */}
         <div className="w-[360px] h-[656px] ml-[65px] flex flex-col gap-40 pt-1 pl-10">
           {rightItems.map((item, idx) => (
             <div key={idx} className="flex items-center">
-
-              {/* Text left-aligned */}
               <div className="max-w-[240px] text-left">
-                <h3
-                  className="font-[Peralta] text-[18px] font-normal text-gray-900 mb-1"
-                >
+                <h3 className="font-[Peralta] text-[18px] font-normal text-gray-900 mb-1">
                   {item.heading}
                 </h3>
                 <p className="font-[Poppins] text-sm text-[#656689] leading-relaxed">
@@ -111,10 +103,7 @@ const FacilitiesSection = ({
           <div className="space-y-5">
             {leftItems.map((item, idx) => (
               <div key={idx}>
-                <h3
-                  className="text-[18px] font-semibold text-gray-900"
-                  style={{ fontFamily: "'Peralta', serif" }}
-                >
+                <h3 className="text-[18px] font-semibold text-gray-900" style={{ fontFamily: "'Peralta', serif" }}>
                   {item.heading}
                 </h3>
                 <p className="text-sm text-gray-600">{item.text}</p>
@@ -124,10 +113,7 @@ const FacilitiesSection = ({
           <div className="space-y-5">
             {rightItems.map((item, idx) => (
               <div key={idx}>
-                <h3
-                  className="text-[18px] font-semibold text-gray-900"
-                  style={{ fontFamily: "'Peralta', serif" }}
-                >
+                <h3 className="text-[18px] font-semibold text-gray-900" style={{ fontFamily: "'Peralta', serif" }}>
                   {item.heading}
                 </h3>
                 <p className="text-sm text-gray-600">{item.text}</p>

@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Logo + About */}
         <div className="flex-1">
           <img src="/Headlogo.png" alt="Logo" className="h-10 sm:h-11 md:h-12 mb-4" />
-          <p className="font-[Poppins] text-base mb-10 w-[400px] sm:w-full sm:max-w-[400px]">
+         <p className="font-[Poppins] text-base mb-10 w-full max-w-[400px] break-words">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="flex flex-wrap gap-4">

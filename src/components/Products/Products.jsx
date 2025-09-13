@@ -80,10 +80,12 @@ export default function Products(){
         
         <section className="relative flex flex-wrap justify-center text-center gap-9 my-44">
             
-            <img src="/Paw2.png" className="absolute left-[550px] top-[5px] w-[80px] h-[80px] "/>
-            <h1 className="font-[Peralta]  font-normal text-[48px]">Products</h1>
-            <p className="font-[Poppins] text-[#656689] font-normal text-[22px] px-[450px]">Pets Nutrients & Food , 25% of all products</p>
+            <div className='flex flex-nowrap flex-col justify-center items-center gap-4'>
+            <img src="/Paw2.png" className="absolute w-[80px] h-[80px] top-[120px] left-[20%] translate-x-[-50%] sm:top-[5px] sm:left-[550px] sm:translate-x-0" />
 
+            <h1 className="font-[Peralta]  font-normal text-[48px]">Products</h1>
+            <p className="font-[Poppins] text-[#656689] font-normal text-[22px] max-px-[450px]">Pets Nutrients & Food , 25% of all products</p>
+            </div>
             <div className="flex flex-wrap justify-center gap-10 my-11 ">
                 {products.map((product, index) => (
                     <div key={index} className="flex flex-wrap my-28 justify-between items-start w-[380px] h-[388px] px-4">
